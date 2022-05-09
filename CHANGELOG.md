@@ -1,3 +1,13 @@
+#### 1.8.0 (2022-05-09)
+
+##### New Features
+
+* change username ([73c63d54](https://github.com/abbas0327/generate-changelog/commit/73c63d5411de5fd2c4232825b7934e32e3934218))
+
+##### Bug Fixes
+
+* **documentation:**  quick typo fix ([#57](https://github.com/abbas0327/generate-changelog/pull/57)) ([7e9ffd66](https://github.com/abbas0327/generate-changelog/commit/7e9ffd66f70503b812f65a36311842b6abbd93c3))
+
 ### 1.8.0 (2019-06-25)
 
 ##### Documentation Changes
