@@ -11,7 +11,7 @@ describe('writer', function () {
   describe('getCommitUrl', function () {
 
     it('makes a valid URL for a BitBucket repository', function () {
-      var url = 'https://bitbucket.org/lob/generate-changelog';
+      var url = 'https://bitbucket.org/abbas0327/generate-changelog';
       var commitHash = '1234567890';
 
       var linkUrl = Writer.getCommitUrl(url, commitHash);
@@ -19,7 +19,7 @@ describe('writer', function () {
     });
 
     it('makes a valid URL for a GitHub repository', function () {
-      var url = 'https://github.com/lob/generate-changelog';
+      var url = 'https://github.com/abbas0327/generate-changelog';
       var commitHash = '1234567890';
 
       var linkUrl = Writer.getCommitUrl(url, commitHash);
@@ -27,8 +27,8 @@ describe('writer', function () {
     });
 
     it('makes a valid URL for a Gitlab repository', function () {
-      var url = 'https://gitlab.com/lob/generate-changelog.git';
-      var expectedUrl = 'https://gitlab.com/lob/generate-changelog';
+      var url = 'https://gitlab.com/abbas0327/generate-changelog.git';
+      var expectedUrl = 'https://gitlab.com/abbas0327/generate-changelog';
       var commitHash = '1234567890';
 
       var linkUrl = Writer.getCommitUrl(url, commitHash);
@@ -247,7 +247,7 @@ describe('writer', function () {
 
     it('wraps the hash in a link if a repoUrl is provided', function () {
       var category = 'testing';
-      var url = 'https://github.com/lob/generate-changelog';
+      var url = 'https://github.com/abbas0327/generate-changelog';
       var commits = [
         { type: 'feat', category: category, subject: 'did some testing', hash: '1234567890' }
       ];
@@ -267,7 +267,7 @@ describe('writer', function () {
 
     it('wraps an issue/pr number if a repoUrl is provided', function () {
       var category = 'testing';
-      var url = 'https://github.com/lob/generate-changelog';
+      var url = 'https://github.com/abbas0327/generate-changelog';
       var pr = 7;
       var commits = [
         { type: 'feat', category: category, subject: 'Merge pull request #' + pr + 'from some/repo', hash: '1234567890' }
@@ -288,7 +288,7 @@ describe('writer', function () {
 
     it('wraps more than one issue/pr numbers in one commit if a repoUrl is provided', function () {
       var category = 'testing';
-      var url = 'https://github.com/lob/generate-changelog';
+      var url = 'https://github.com/abbas0327/generate-changelog';
       var prs = [7, 42];
       var commits = [
         { type: 'feat', category: category, subject: 'fixes (#' + prs[0] + '): added some (#' + prs[1] + ')', hash: '1234567890' }

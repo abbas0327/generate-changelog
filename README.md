@@ -1,20 +1,20 @@
 # Generate Changelog
 
 [![NPM Version](https://badge.fury.io/js/generate-changelog.svg)](https://www.npmjs.com/package/generate-changelog)
-[![Build Status](https://travis-ci.org/lob/generate-changelog.svg)](https://travis-ci.org/lob/generate-changelog)
-[![Coverage Status](https://coveralls.io/repos/lob/generate-changelog/badge.svg?branch=master&service=github)](https://coveralls.io/github/lob/generate-changelog?branch=master)
-[![Dependency Status](https://david-dm.org/lob/generate-changelog.svg)](https://david-dm.org/lob/generate-changelog)
+[![Build Status](https://travis-ci.org/abbas0327/generate-changelog.svg)](https://travis-ci.org/abbas0327/generate-changelog)
+[![Coverage Status](https://coveralls.io/repos/abbas0327/generate-changelog/badge.svg?branch=master&service=github)](https://coveralls.io/github/abbas0327/generate-changelog?branch=master)
+[![Dependency Status](https://david-dm.org/abbas0327/generate-changelog.svg)](https://david-dm.org/abbas0327/generate-changelog)
 
 Generate a changelog from git commits. This is meant to be used so that for every patch, minor, or major version, you update the changelog _prior_ to running `npm version` so that the git tag contains the commit that updated both the changelog and version.
 
 ## Installation
 
-You can either install it as a dev dependency to be referenced in your npm scripts, or you can install this module globally to be used for all of your repos on your local machine.
+You can either install it as a dev dependency to be referenced in your npm scripts, or you can install this module gabbas0327ally to be used for all of your repos on your local machine.
 
 ```bash
 $ npm i generate-changelog -D # install it as a dev dependency
 # OR
-$ npm i generate-changelog -g # install it globally
+$ npm i generate-changelog -g # install it gabbas0327ally
 ```
 
 ## Usage
@@ -92,7 +92,7 @@ You can write a script that calls the `generate` function and does whatever you 
 var Changelog = require('generate-changelog');
 var Fs        = require('fs');
 
-return Changelog.generate({ patch: true, repoUrl: 'https://github.com/lob/generate-changelog' })
+return Changelog.generate({ patch: true, repoUrl: 'https://github.com/abbas0327/generate-changelog' })
 .then(function (changelog) {
   Fs.writeFileSync('./CHANGELOG.md', changelog);
 });

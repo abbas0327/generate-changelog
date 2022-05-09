@@ -74,7 +74,7 @@ describe('package', function () {
     });
 
     it('returns the raw URL if it is not a GitHub URL', function () {
-      var repo = { url: 'https://bitbucket.org/lob/generate-changelog' };
+      var repo = { url: 'https://bitbucket.org/abbas0327/generate-changelog' };
 
       Sinon.stub(Package, 'getUserPackage').returns(Bluebird.resolve({ repository: repo }));
 
@@ -88,8 +88,8 @@ describe('package', function () {
     });
 
     it('correctly parses a GitHub URL', function () {
-      var parsedUrl = 'https://github.com/lob/generate-changelog';
-      var repo = { url: 'git+https://github.com/lob/generate-changelog.git' };
+      var parsedUrl = 'https://github.com/abbas0327/generate-changelog';
+      var repo = { url: 'git+https://github.com/abbas0327/generate-changelog.git' };
 
       Sinon.stub(Package, 'getUserPackage').returns(Bluebird.resolve({ repository: repo }));
 
