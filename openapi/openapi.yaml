@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Task Management API
-  version: 1.0.0
+  version: v1
 paths:
   /tasks:
     get:
