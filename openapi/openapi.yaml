@@ -3,10 +3,10 @@ info:
   title: Sample API
   version: 1.0.0
 paths:
-  /user/{userId}:
+  /accounts/{accountsId}:
     get:
-      summary: Get user information
-      description: Retrieve information about a specific user.
+      summary: Get account information
+      description: Retrieve the account of a specific user.
       parameters:
         - name: userId
           in: path
@@ -20,6 +20,4 @@ paths:
           content:
             application/json:
               example:
-                userId: 123
-                username: john_doe
-                email: john.d
+                accountid: 12345678
